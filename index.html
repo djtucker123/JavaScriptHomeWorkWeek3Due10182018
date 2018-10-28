@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>_Homework_10272018</title>
+
+<!-- font awsome linked into for fonts-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  </head>
+
+<body>
+
+<!--This is to be a SPA - SinglePageApplication so make pieces and show/hide based on which link is active.
+  left margin navbar is constant.  about 20% of page width. this is View section. and home which is start page with nothing else showing
+  right container is 75% - float right and is template for other pages
+  right container has couple versions not all are visible at all times 
+  Add page to add entry fields for new objects
+  print page for listing all objects in rolling including off page
+  verify page to show if an entered person exists in the records
+-->
+<nav>
+  <div class="leftNavBar">
+     <ul>
+
+        <li>
+          <button  id="top" class="btn btn-default">
+            <span style="color: Tomato;" class="fas fa-ghost" ></span>
+          </button> 
+        </li>
+          <br>
+        <li>
+          <div id="view">View</div> 
+        </li>
+        <li>
+          <div id="add">Add</div> 
+        </li>
+        <li>
+          <div id="verify">Verify</div>  
+        </li>
+        <li>
+          <div id="update">Update</div> 
+        </li>
+        <li>
+          <div id="delete">Delete</div>
+        </li>
+    
+     </ul>
+
+    
+  </div>
+</nav>
+<!--
+  Start Right Side sections for various links
+
+
+  How to get glyph or icon onto button faces?????????
+<input type="image" src="/_i/mag.png" alt="Search">
+glyphicon glyphicon-search
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+     <button type="button" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-align-left"></span>
+    </button>
+    
+    <span style="font-size: 3em; color: Tomato;">
+      <i class="fas fa-ghost"></i>
+    </span>
+
+-->
+<Main>
+  <section id="viewSection">
+    <div class="allContent"></div>
+  </section>
+
+  <section id="addSection">
+    <input id="name">
+    <input id="officeNum">
+    <input id="phoneNum">
+    <button id="addEmployee">Add</button>
+  </section>
+
+  <section id="verifySection">
+    <input id="nameVerify">
+    <button id="verifyName">Search</button><br>
+    <div class="valid"></div>
+  </section>
+  
+  <section id="updateSection">
+    <input id="nameUpdate">
+    <input id="officeNumUpdate">
+    <input id="phoneNumUpdate">
+    <button id="updateEmployee">Update</button>
+  </section>
+<!-- Delete section appears to be replica of seach (verify) however if person exists, then delete the entire record from Array-->
+  <section id="deleteSection">
+    <input id="deleteVerify">
+    <button id="deleteName">Delete</button>
+  </section>
+
+</Main>
+
+
+
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+  <script src="app.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+ 
+ 
+</body>
+
+</html>

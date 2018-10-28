@@ -1,0 +1,119 @@
+
+* {
+ box-sizing: border-box; 
+ margin: 0 auto;
+ position: relative;
+ min-height: 100%;
+
+ font-family:  Arial, Helvetica, sans-serif;
+}
+
+.leftNavBar {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 15%;
+    margin: 2%;
+    text-align: center;
+    padding-top: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left
+   
+}
+
+.box {
+    border: solid;
+    border-color: black;
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+#viewSection {
+ 
+    width: 80%;
+    float: right;
+    height: 100%;
+    margin: 2%;
+    padding: 2%; 
+}
+
+#addSection {
+   
+    width: 80%;
+    float: right;
+    height: 100%;
+    margin: 2%;
+    padding: 2%; 
+}
+#verifySection {
+ 
+    width: 80%;
+    float: right;
+    height: 100%;
+    margin: 2%;
+    padding: 2%; 
+}
+
+#updateSection {
+ 
+    width: 80%;
+    float: right;
+    height: 100%;
+    margin: 2%;
+    padding: 2%; 
+}
+
+#deleteSection {
+
+    width: 80%;
+    float: right;
+    height: 100%;
+    margin: 2%;
+    padding: 2%; 
+}
+
+
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or more.
+*/
+@media screen and (max-width: 2000px) {
+    /* The body's bg color will be #333 */
+
+    .leftNavBar {
+        font-size: 130%;
+    }
+  }
+  
+  /*
+    These rules take effect when the browser's width
+    is either 768px or less.
+  */
+  @media screen and (max-width: 768px) {
+    /* The body's bg color will be*/
+    body {
+      
+      font-size: 75%;
+    }
+    .leftNavBar {
+        font-size: 75%;
+    }
+  
+  }
+  /*
+    These rules take effect when the browser's width
+    is either 640px or less.
+  */
+  @media screen and (max-width: 640px) {
+   
+    body {
+     
+      font-size: 50%;
+    }
+    .leftNavBar {
+        font-size: 50%;
+    }
+}
